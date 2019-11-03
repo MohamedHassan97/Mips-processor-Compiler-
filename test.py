@@ -170,10 +170,10 @@ for every_list in instruction_array:
 
     elif str(every_list[0]) == "j":
         Mc_file = open("output.txt", "a")
-        Mc_file.write(str(hex2bin(instruction_table.get("j").get("opcode"), 6)) + str(hex2bin(every_list[1]), 26) + "\n")
+        Mc_file.write(str(hex2bin(instruction_table.get("j").get("opcode"), 6)) + str(hex2bin(every_list[1], 26)) + "\n")
         Mc_file.close()
 
     elif str(every_list[0]) == "jal":
         Mc_file = open("output.txt", "a")
-        Mc_file.write(str(hex2bin(instruction_table.get("jal").get("opcode"), 6)) + str(hex2bin(every_list[1]), 26) + "\n")
+        Mc_file.write(str(hex2bin(instruction_table.get("jal").get("opcode"), 6)) + str(hex2bin(every_list[1], 26)) + "\n")
         Mc_file.close()

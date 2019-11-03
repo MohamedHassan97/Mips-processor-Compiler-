@@ -1,3 +1,7 @@
-add $s1,$s2,$s3 
-or $s1,$s2,$s3 
+add $s4,$s5,$s6 
+or $s6,$s7,$s5 
 slt $s1,$s2,$s3 
+beq $s1,$s2,3
+sw $s1,4($s3)
+j 1234
+addi $s4,$s5,12335435
